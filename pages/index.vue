@@ -57,13 +57,13 @@ const page = ref({
     description: 'Aksyon - Stocks Analysis'
 })
 
-useSeoMeta({
-    titleTemplate: '',
-    title: page.value.title,
-    ogTitle: page.value.title,
-    description: page.value.description,
-    ogDescription: page.value.description
-})
+// useSeoMeta({
+//     titleTemplate: '',
+//     title: page.value.title,
+//     ogTitle: page.value.title,
+//     description: page.value.description,
+//     ogDescription: page.value.description
+// })
 </script>
 
 <style scoped>
