@@ -3,7 +3,7 @@
         <UCard>
             <template #header>
                 <div class="flex justify-center items-center font-bold text-5xl">
-                    {{ 'Stock Levels' }}
+                    {{ 'Aksyo Stock Levels' }}
                 </div>
             </template>
 
@@ -314,6 +314,9 @@ const rows = computed(() => {
         ))
         : data;
 
+    if (filteredData.slice((page.value - 1) * pageCount, page.value * pageCount).length==0){
+        page.value = 1;
+    }
     // Paginate the filtered data
     return filteredData.slice((page.value - 1) * pageCount, page.value * pageCount);
 });
