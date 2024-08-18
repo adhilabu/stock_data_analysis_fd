@@ -11,22 +11,27 @@
 <script setup lang="ts">
 // import { useRoute } from 'vue-router';
 // const route = useRoute();
+const config = useRuntimeConfig()
+console.log('taipyApiBaseUrl :', config.public.taipyApiBaseUrl)
+
 const links = [
   [{
     label: 'Home',
     icon: 'i-heroicons-home',
     to: '/'
   }, {
-    label: 'Analyse',
+    label: 'Level',
     icon: 'i-heroicons-light-bulb',
-    to: '/analyse'
+    to: '/levels'
+  }, {
+    label: 'Forcast',
+    icon: 'i-heroicons-chart-bar',
+    to: config.public.taipyApiBaseUrl,
+    target: '_blank'
   }, {
     label: 'About',
-    icon: 'i-heroicons-chart-bar',
+    icon: 'i-heroicons-question-mark-circle',
     to: '/about'
-  },{
-    label: 'Help',
-    icon: 'i-heroicons-question-mark-circle'
   }]
 ]
 </script>

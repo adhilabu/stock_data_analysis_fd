@@ -19,7 +19,6 @@ export default defineNuxtConfig({
     '/old-page': { redirect: '/new-page' }
   },
   modules: ['@nuxt/ui','@pinia/nuxt', '@nuxthq/studio'],
-  extends: ['@nuxt/ui-pro'],
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
   postcss: {
@@ -28,4 +27,10 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  runtimeConfig: {
+    public: {
+      backendApiBaseUrl: process.env.BACKEND_API || 'http://127.0.0.1:8000',
+      taipyApiBaseUrl: process.env.TAIPY_API || 'http://127.0.0.1:5000'
+    }
+  }
 })
