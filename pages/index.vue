@@ -10,7 +10,6 @@
                         v-for="(link, index) in pageData.hero.links" 
                         :key="index" 
                         :icon="link.icon"
-                        :color="link.color"
                         :target="link.target"
                         :to="link.to"
                         :href="link.to"
