@@ -116,19 +116,23 @@ const columns = [
   },
   {
     key: 'SupportHigh',
-    label: 'Support High'
+    label: 'Support High',
+    sortable: true
   },
   {
     key: 'SupportLow',
-    label: 'Support Low'
+    label: 'Support Low',
+    sortable: true
   },
   {
     key: 'ResistanceHigh',
-    label: 'Resistance High'
+    label: 'Resistance High',
+    sortable: true
   },
   {
     key: 'ResistanceLow',
-    label: 'Resistance Low'
+    label: 'Resistance Low',
+    sortable: true
   }
 ];
 

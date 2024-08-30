@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <ULandingHero :title="pageData.hero.title" :description="pageData.hero.description" :links="pageData.hero.links" />
+        <!-- <ULandingHero :title="pageData.hero.title" :description="pageData.hero.description" :links="pageData.hero.links" /> -->
         <UContainer class="centered-container">
             <div class="info-section">
                 <h2 class="info-title">{{ pageData.hero.title }}</h2>
