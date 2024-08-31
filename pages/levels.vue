@@ -72,7 +72,7 @@ interface StockSymbol {
 
 const config = useRuntimeConfig();
 const toast = useToast();
-const analyseUrl = `${config.public.backendApiBaseUrl}/analyse/v1/get/stock/levels/`;
+const analyseUrl = `${config.public.backendApiBaseUrl}analyse/v1/get/stock/levels/`;
 const selectedSymbol = ref('');
 const enableSelect = ref(true);
 const allMap = { value: 'all', name: 'All' };
